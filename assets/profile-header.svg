@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="title description">
+  <title id="title">Rehan Shaikh — AI/ML Developer and Backend Engineer</title>
+  <desc id="description">A static navy and blue developer portfolio header.</desc>
+  <rect x="1" y="1" width="1198" height="238" rx="16" fill="#0b1426" stroke="#203756" stroke-width="2"/>
+  <path d="M64 48H112" stroke="#60a5fa" stroke-width="4"/>
+  <text x="130" y="54" fill="#93c5fd" font-family="Segoe UI,Arial,sans-serif" font-size="19" letter-spacing="3">DEVELOPER PORTFOLIO</text>
+  <text x="60" y="128" fill="#f1f5f9" font-family="Segoe UI,Arial,sans-serif" font-size="58" font-weight="700">Rehan Shaikh</text>
+  <text x="64" y="175" fill="#93c5fd" font-family="Segoe UI,Arial,sans-serif" font-size="26">AI/ML Developer &amp; Backend Engineer</text>
+  <text x="64" y="212" fill="#a1b2ca" font-family="Segoe UI,Arial,sans-serif" font-size="18">Explainable models. Practical APIs. Intelligent systems.</text>
+  <g fill="none" stroke="#335a87" stroke-width="2">
+    <path d="M933 72L1053 120L943 185L1110 186M1053 120L1110 54M943 185L933 72"/>
+    <circle cx="933" cy="72" r="9" fill="#0b1426"/>
+    <circle cx="1053" cy="120" r="13" fill="#132b4b" stroke="#60a5fa"/>
+    <circle cx="943" cy="185" r="9" fill="#0b1426"/>
+    <circle cx="1110" cy="54" r="7" fill="#0b1426"/>
+    <circle cx="1110" cy="186" r="7" fill="#0b1426"/>
+  </g>
+</svg>

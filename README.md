@@ -1,84 +1,95 @@
 <div align="center">
+  <img src="./assets/profile-header.svg" alt="Rehan Shaikh — AI/ML and backend engineering" width="100%" />
 
-# Rehan
+  <p><strong>4× hackathon podium finishes</strong> · <strong>CSI Technical Team, KKWIEER</strong></p>
 
-### AI/ML Developer & Backend Engineer
-
-Building intelligent systems with machine learning, reliable APIs, and thoughtful automation.
-
-**4x Hackathon Winner** &nbsp; · &nbsp; **Technical Team Member at CSI, KKWIEER**
-
-[GitHub](https://github.com/rehan-03) &nbsp; / &nbsp; [Explore my repositories](https://github.com/rehan-03?tab=repositories)
-
+  <p>
+    <a href="#selected-projects">Projects</a> ·
+    <a href="#engineering-evidence">Architecture &amp; code</a> ·
+    <a href="#achievements">Achievements</a> ·
+    <a href="https://www.linkedin.com/in/rehan-shaikh113/">LinkedIn</a> ·
+    <a href="mailto:rehanshaikh30307@gmail.com">Email</a>
+  </p>
 </div>
 
 ---
 
 ## About
 
-I build AI-powered applications and backend systems, with a focus on fraud detection, blockchain investigation, and intelligent automation. My work connects machine learning with practical APIs and interfaces that make complex information useful.
+I'm **Rehan Shaikh**, a Computer Engineering student at **KKWIEER, Nashik**. I build explainable ML workflows, backend APIs, and applications that turn complex data into useful decisions.
 
-- **AI/ML:** fraud risk scoring, retrieval-augmented generation, and agent evaluation.
-- **Backend:** API design, asynchronous workflows, and data-driven applications.
-- **Community:** technical team member at the CSI student branch, KKWIEER.
+My interests span **fraud detection, graph intelligence, RAG evaluation, and intelligent automation**. I also contribute as a **Technical Team Member at the CSI student branch**.
 
-## Featured projects
+## Selected projects
 
-### UniGraph — AI Fraud Detection & Blockchain Investigation
+### 01 · UniGraph — Fraud detection & graph intelligence
 
-Trace suspicious crypto transactions, identify exchanges, and support investigations with explainable ML risk scores and forensic reports.
+**1st place, MIT ADT AI Grand Challenge 2026 · ₹1,00,000 prize**
 
-**Stack:** Python · FastAPI · XGBoost · SHAP · Neo4j · PostgreSQL · Redis
+My hackathon work focused on transaction graphs and explainable fraud detection. The public React/TypeScript prototype demonstrates alert triage, fraud-pattern investigation, and graph-based risk explanations using scenario data.
 
-[Backend repository](https://github.com/rehan-03/sih-backend) &nbsp; · &nbsp; [Frontend repository](https://github.com/rehan-03/UniGraph)
+**Public stack:** React · TypeScript · Vite · Recharts
 
-### RAGShield — Intelligent RAG Quality Control
+[Interface repository](https://github.com/rehan-03/UniGraph) · [Graph investigation code](https://github.com/rehan-03/UniGraph/blob/main/src/pages/GraphExplorer.tsx) · [Local setup](https://github.com/rehan-03/UniGraph/blob/main/README.md)
 
-An agent evaluation environment that verifies claims, flags hallucinations, refines retrieval, and approves or escalates generated answers.
+**Related blockchain backend:** [sih-backend](https://github.com/rehan-03/sih-backend) is a separate FastAPI project with BTC/ETH/TRON tracing, XGBoost risk scoring, SHAP explanations, Neo4j graph storage, and Celery workers. Explore the [API contract](https://github.com/rehan-03/sih-backend/blob/main/contracts/openapi.yaml), [model evaluation and limitations](https://github.com/rehan-03/sih-backend/blob/main/docs/ml.md), or a [guided local investigation demo using synthetic data](https://github.com/rehan-03/NCRP-demo/blob/main/README.md).
+
+### 02 · RAGShield — Evaluation for reliable RAG agents
+
+An OpenEnv-compatible reinforcement learning environment for reviewing generated answers across financial, medical, and legal scenarios. Agents select evidence, verify claims, rewrite answers, and decide whether to approve, reject, or escalate.
+
+**Engineering focus:** seeded synthetic episodes, action budgets, dense rewards, pluggable RAG providers, and HTTP/WebSocket interfaces.
 
 **Stack:** Python · FastAPI · OpenEnv · Reinforcement Learning
 
-[View repository](https://github.com/rehan-03/ragshield)
+[Repository](https://github.com/rehan-03/ragshield) · [Environment implementation](https://github.com/rehan-03/ragshield/blob/main/server/environment.py) · [Local demo & setup](https://github.com/rehan-03/ragshield/blob/main/README.md#quick-start) · [Smoke checks](https://github.com/rehan-03/ragshield/blob/main/test_smoke.py)
 
-### AlgoLearn — Adaptive Learning & Automation
+### 03 · AlgoLearn — Adaptive learning & code evaluation
 
-An interactive learning platform with algorithm visualizations, adaptive quizzes, automated code evaluation, and student progress analytics.
+A learning platform combining algorithm visualizations, adaptive quizzes, and automated evaluation of C, C++, Java, and Python submissions.
 
-**Stack:** React · Next.js · Node.js · Express · MongoDB · Redis
+**Engineering focus:** difficulty adapts to answer correctness; progress tracks weak concepts; role-based APIs separate student and faculty access. Judge0 submissions use bounded concurrency, timeouts, and Redis-backed rate limiting.
 
-[View repository](https://github.com/rehan-03/PBL)
+**Stack:** Next.js · React · Node.js · Express · MongoDB · Redis · Judge0
 
-## Technology
+[Repository](https://github.com/rehan-03/PBL) · [Adaptive assessment](https://github.com/rehan-03/PBL/blob/main/backend/src/modules/assessment/assessment.service.js) · [Code execution service](https://github.com/rehan-03/PBL/blob/main/backend/src/modules/code/code.service.js) · [Local demo & setup](https://github.com/rehan-03/PBL/blob/main/README.md#quick-start)
 
-**Languages**
+## Engineering evidence
 
-![C++](https://img.shields.io/badge/C%2B%2B-161b22?style=flat-square&logo=cplusplus&logoColor=58a6ff)
-![Python](https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=58a6ff)
-![Java](https://img.shields.io/badge/Java-161b22?style=flat-square&logo=openjdk&logoColor=58a6ff)
-![JavaScript](https://img.shields.io/badge/JavaScript-161b22?style=flat-square&logo=javascript&logoColor=58a6ff)
+| System | Architecture to explore | Reviewable implementation |
+| :--- | :--- | :--- |
+| Blockchain backend | Explorer data → FastAPI services → wallet records and risk explanations; Celery builds the transaction graph in Neo4j. | [Tracing](https://github.com/rehan-03/sih-backend/blob/main/backend/app/services/tracing_service.py) · [Graph worker](https://github.com/rehan-03/sih-backend/blob/main/backend/app/workers/tasks/graph_builder.py) |
+| RAGShield | Seeded scenario → agent actions → reward and grader feedback → review decision. | [Environment](https://github.com/rehan-03/ragshield/blob/main/server/environment.py) · [Rewards](https://github.com/rehan-03/ragshield/blob/main/server/rewards.py) |
+| AlgoLearn | Next.js interface → Express API → MongoDB progress data; Redis limits Judge0 code submissions. | [Code service](https://github.com/rehan-03/PBL/blob/main/backend/src/modules/code/code.service.js) · [Access control](https://github.com/rehan-03/PBL/blob/main/backend/src/middleware/auth.js) |
 
-**Web & Backend**
+**More intelligent automation:** I worked on the [DPR Evaluation & Assessment Platform](https://github.com/xemorph64/DPR_new), which combines OCR, semantic retrieval, and compliance analysis for project reports. [Architecture](https://github.com/xemorph64/DPR_new/blob/main/DPR_SYSTEM_ARCHITECTURE_AND_INTERVIEW_BRIEF.md) · [Local setup](https://github.com/xemorph64/DPR_new/blob/main/README.md)
 
-![React](https://img.shields.io/badge/React-161b22?style=flat-square&logo=react&logoColor=58a6ff)
-![Node.js](https://img.shields.io/badge/Node.js-161b22?style=flat-square&logo=nodedotjs&logoColor=58a6ff)
-![FastAPI](https://img.shields.io/badge/FastAPI-161b22?style=flat-square&logo=fastapi&logoColor=58a6ff)
-![Kafka](https://img.shields.io/badge/Kafka-161b22?style=flat-square&logo=apachekafka&logoColor=58a6ff)
+## Skills
 
-**AI & Data**
+| Area | Technologies |
+| :--- | :--- |
+| Languages | Python, C++, Java, JavaScript, SQL |
+| AI & ML | PyTorch, GraphSAGE, XGBoost, Isolation Forest, SHAP, RAG, Reinforcement Learning |
+| Backend & web | FastAPI, Flask, Node.js, React, REST APIs |
+| Streaming & data | Kafka, Flink, Debezium, Neo4j, PostgreSQL, MongoDB, Redis |
+| Tools | Docker, Git, GitHub |
 
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-161b22?style=flat-square&logo=scikitlearn&logoColor=58a6ff)
+## Achievements
 
-## GitHub activity
+| Result | Event | Project |
+| :--- | :--- | :--- |
+| **1st · ₹1,00,000** | MIT ADT AI Grand Challenge 2026 — National | UniGraph |
+| **1st** | AI & Innovation Sprint 2026 — Institute | DPR Evaluation Platform |
+| **3rd** | TELEKINESIS 2K26 AI-THON — District | DPR Evaluation Platform |
+| **2nd** | MIBCS Convergence Hackathon 2025 — Institute | DPR Evaluation Platform |
+
+**Community:** Technical Team Member, CSI student branch, KKWIEER.<br />
+**Education:** B.Tech in Computer Engineering, KKWIEER · 2024–2028.
+
+---
 
 <p align="center">
-  <a href="https://github.com/rehan-03?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api?username=rehan-03&amp;show_icons=true&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;icon_color=58a6ff&amp;text_color=c9d1d9" alt="Rehan's GitHub statistics" width="420" />
-  </a>
-  <a href="https://github.com/rehan-03?tab=overview">
-    <img src="https://streak-stats.demolab.com?user=rehan-03&amp;theme=github-dark-blue&amp;hide_border=true" alt="Rehan's GitHub contribution streak" width="420" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/rehan-03?tab=overview">View contributions on GitHub</a>
+  <a href="https://github.com/rehan-03?tab=repositories">Explore all repositories</a> ·
+  <a href="https://github.com/rehan-03?tab=overview">View contributions</a> ·
+  <a href="mailto:rehanshaikh30307@gmail.com">Get in touch</a>
 </p>
